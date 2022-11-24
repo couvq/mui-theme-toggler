@@ -1,13 +1,14 @@
-import React from 'react';
+import { ColorModeProvider } from "./context/ColorModeContext";
+import HomePageContainer from "./HomePageContainer";
 
 const App = () => {
-
-
   return (
     <>
-      Hello World
+      <ColorModeProvider>
+        <HomePageContainer />
+      </ColorModeProvider>
     </>
   );
-}
+};
 
 export default App;
